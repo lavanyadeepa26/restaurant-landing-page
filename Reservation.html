@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color:rgb(130,255,179) ;
+    }
+    
+    header {
+        background-color: #333;
+        color: white;
+        margin-bottom: 5px;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    main {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 35px;
+        border: 2px solid black;
+    }
+    
+    form {
+        display: grid;
+        grid-gap: 10px;
+    }
+    
+    label {
+        font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"],
+    input[type="number"],
+    textarea {
+        width: 100%;
+        
+        padding: 10px;
+        border: 1px solid #0a0808d2;
+        border-radius: 5px;
+    }
+    
+    button {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        border:2px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #555;
+    }
+</style>
+    
+</head>
+<body>
+    <header>
+        <h1>Make a Reservation</h1>
+    </header>
+    <main>
+        <form id="reservation-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <label for="party-size">Party Size:</label>
+            <input type="number" id="party-size" name="party-size" min="1" required>
+            
+            <label for="special-requests">Special Requests:</label>
+            <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+            
+            <button type="submit">Submit Reservation</button>
+        </form>
+    </main>
+</body>
+</html>
